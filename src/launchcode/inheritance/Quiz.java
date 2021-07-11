@@ -8,6 +8,7 @@ public class Quiz {
         int correctAnswers = 0;
              for (Question question : questions) {
                  correctAnswers +=question.isAnswerCorrect();
+
              }
              return correctAnswers/questions.size()*100;
     }
